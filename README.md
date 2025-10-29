@@ -1,3 +1,5 @@
+<h1>Data analytics on food price inflation</h1>
+  
 Doing data analytics on food price inflation to answer the following questions:
 
 1. How has Singapore’s food prices changed over the years? Is this worrying?
