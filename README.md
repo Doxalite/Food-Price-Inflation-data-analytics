@@ -1,4 +1,4 @@
-<h1>Data analytics on food price inflation</h1>
+<h1>Exploring global inflation on its impact on food prices</h1>
   
 Doing data analytics on food price inflation to answer the following questions:
 
