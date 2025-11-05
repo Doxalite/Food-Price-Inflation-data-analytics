@@ -106,6 +106,9 @@ predictions_monthly_2026 = (predictions_monthly_2026_differenced.cumsum() + last
 predictions_monthly_2026
 prediction_2026 = predictions_monthly_2026.mean()
 cpi_2025 = CPI_SG.iloc[-9:, 0].mean()
+predicted_inflation_rate_2026 = round(((prediction_2026 - cpi_2025)/cpi_2025) * 100, 2)
 print(f'2025 CPI up to Sept: {cpi_2025}')
 print(f'2026 CPI prediction: {prediction_2026}\nwith 2000 as base year')
-print(f'Predicted inflation rate: {round(((prediction_2026 - cpi_2025)/cpi_2025) * 100, 2)}%')
+print(f'Predicted inflation rate: {predicted_inflation_rate_2026}%')
+
+pd.DataFrame([prediction_2026, predicted_inflation_rate_2026], index=['CPI', 'Inflation Rate'], columns=['2026']).T.to_csv('prediction_2026.csv')
